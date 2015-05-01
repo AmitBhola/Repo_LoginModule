@@ -25,6 +25,18 @@ namespace LoginModule
             {
                 Response.Redirect("~/LoginPage.aspx");
             }
+
+            lbl_name1.Text = Session["UserName"].ToString();
+            lbl_name2.Text = Session["UserName"].ToString();
+            lbl_name3.Text = Session["UserName"].ToString();
+
+            lbl_Address1.Text = Session["Address"].ToString();
+            lbl_Address2.Text = Session["Address"].ToString();
+            lbl_Address3.Text = Session["Address"].ToString();
+
+            lbl_nickName1.Text = Session["UserNickName"].ToString();
+            lbl_nickName2.Text = Session["UserNickName"].ToString();
+            lbl_nickName3.Text = Session["UserNickName"].ToString();
         }
 
         protected void btn_ser1_Click(object sender, EventArgs e)
